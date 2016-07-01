@@ -17,7 +17,7 @@ interface Vote {
                 {{vote.name}}
             </button>
             <span *ngFor="#b of blocks(i)" 
-                  [innerHtml]="'&#9609;'" 
+                  [innerHTML]="'&#9609;'" 
                   [ngClass]="blockColor(i) + '-block'">
             </span>
             <span *ngIf="vote.count">
