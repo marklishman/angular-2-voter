@@ -1,5 +1,6 @@
-import { bootstrap } from '@angular/platform-browser-dynamic';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { VoterComponent } from './voter.component';
+import { AppModule } from './app.module';
 
-bootstrap(VoterComponent);
+const platform = platformBrowserDynamic();
+platform.bootstrapModule(AppModule);
